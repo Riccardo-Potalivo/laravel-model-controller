@@ -7,10 +7,20 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Installazione Laravel
+## Laravel Model Controller
 
-````
-## Configurazione Laravel
-```bash
-composer require pacificdev/laravel_9_preset
-````
+### Description
+
+1. Create un nuovo progetto Laravel 9 (dal template)
+2. tramite phpMyAdmin create un nuovo database laravel_model_controller
+3. inserite le vostre credenziali per il database nel file .env
+4. Create un model Movie  
+   es. php artisan make:model Movie
+5. Create la rotta e un controller che gestirà la rotta / (home) e uno per i libri  
+   es. php artisan make:controller PageController
+6. All’interno della funzione index() del controller, recuperate tutti i film dal database e passateli alla view, che quindi li visualizzerà a schermo, tramite delle card.
+7. Stilare il layout nei dettagli con Sass
+
+### BONUS:
+
+Creare rotta, link, aggiungere metodo show al controller, e pagina di dettaglio del movie
