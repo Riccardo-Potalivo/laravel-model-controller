@@ -10,7 +10,13 @@ class BookController extends Controller
     public function index()
     {
         $books = Book::all();
-        dd($books);
+        // dd($books);
         return view("books.index", compact("books"));
+    }
+    public function show($id)
+    {
+        $book = Book::findOrFail($id);
+        // dd($book);
+        return view("books.show", compact("book"));
     }
 }

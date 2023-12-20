@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Movies')
+@section('title', $movie->title)
 
 @section('content')
 
     <main>
 
         <section class="container">
-            <h1>Movies</h1>
+            <h1>Movie</h1>
             <div class="row">
                 <div class="col-3">
                     <div class="card" style="width: 18rem;">
