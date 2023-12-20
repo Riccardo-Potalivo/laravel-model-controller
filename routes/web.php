@@ -20,4 +20,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/movies', [MovieController::class, 'index'])->name('movies.index');
 
+Route::get('/movies/{id}', [MovieController::class, 'show'])->name('movies.show');
+
 Route::get('/books', [BookController::class, 'index'])->name('books.index');
+
